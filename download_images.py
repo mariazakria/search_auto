@@ -2,20 +2,22 @@ import os
 import requests
 
 def download_images():
-    # List of image URLs for Hyundai Santa Cruz SEL
+    # List of image URLs for Toyota 4runner Venture
     image_urls = [
-        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/lpp/0224/c2f6052bb963433ab6d93ee3f84fa853_ful.jpg",
-        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/lpp/0224/8cca48e10b834d1789111edaccb72a02_ful.jpg",
-        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/lpp/0224/f00fad75a1414bd3b5595fa0706d145e_ful.jpg",
-        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/lpp/0224/54964e88568d4192ba7d066d626a1290_ful.jpg",
-        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/lpp/0224/58a04636ea5e4283a1e6a870f14b3680_ful.jpg",
-        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/lpp/0224/5b9a685a3ee4412d9af7187a549101c5_ful.jpg",
-        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/lpp/0224/4141dbce006045689195375fbcb9accf_ful.jpg",
-        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/lpp/0224/de424c644fc24fd3bb91aca5c62b26b1_ful.jpg",
-        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/lpp/0224/ccf008dd249d4676b5654b23eaf30261_ful.jpg",
-        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/lpp/0224/c5afb8b93cbb42d2b8664df53ae4e36e_ful.jpg",
-        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/lpp/0224/f6b380ee6f594599853def9ad644df69_ful.jpg",
-        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/lpp/0224/7ad90e45de6248e69eea5fb57b2b031b_ful.jpg"
+        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/LPP550/72af304e40b94810b2b47bb48b28e821_ful.jpg",
+        # Remaining URLs will be the full URLs from the first image source
+        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/LPP550/83ce936957614c4b858d4ef24197b55f_ful.jpg",
+        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/LPP550/86227499b23540d69ebeec3a5443c37f_ful.jpg",
+        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/LPP550/59ae713510e84f54bc2bdf6180df0b07_ful.jpg",
+        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/LPP550/e25f6c3c597a491a964cf6647fdfb6d7_ful.jpg",
+        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/LPP550/3d6d921d742e4f86ade863a1b28c7067_ful.jpg",
+        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/LPP550/11015cb553e843648c10bf36997cf843_ful.jpg",
+        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/LPP550/13ced6ae81cf40b88a3ddd932126606d_ful.jpg",
+        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/LPP550/bfc67cd241d34a44acc91c4dd0b4e76e_ful.jpg",
+        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/LPP550/b1c6df8a3686496dabdecf97987dae49_ful.jpg",
+        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/LPP550/5d784db70cdc44e7b59fc460e24a9547_ful.jpg",
+        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/LPP550/3ffb83d206944b45ab1ff9cadf4508d3_ful.jpg",
+        "https://images.salvagereseller.com/v1/AUTH_svc.pdoc00001/LPP550/03105b257b3844689a2597112ba035d7_ful.jpg"
     ]
     
     # Create images directory if it doesn't exist
